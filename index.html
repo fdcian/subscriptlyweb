@@ -1,0 +1,530 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Subscriptly is your calm command center for recurring costs. Track subscriptions, see what’s due next, and get gentle reminders before charges hit.">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <title>Subscriptly - Track subscriptions, see renewals, stay in control.</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<!--
+
+TemplateMo 570 Chain App Dev
+
+https://templatemo.com/tm-570-chain-app-dev
+
+-->
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/templatemo-chain-app-dev.css">
+    <link rel="stylesheet" href="assets/css/animated.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">
+              <img src="assets/images/logo.png" alt="Subscriptly">
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+              <li class="scroll-to-section"><a href="#services">Services</a></li>
+              <li class="scroll-to-section"><a href="#about">About</a></li>
+              <li class="scroll-to-section"><a href="#newsletter">Newsletter</a></li>
+            </ul>        
+            <a class='menu-trigger'>
+                <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+  
+  <div id="modal" class="popupContainer" style="display:none;">
+    <div class="popupHeader">
+        <span class="header_title">Login</span>
+        <span class="modal_close"><i class="fa fa-times"></i></span>
+    </div>
+
+    <section class="popupBody">
+        <!-- Social Login -->
+        <div class="social_login">
+            <div class="">
+                <a href="#" class="social_box fb">
+                    <span class="icon"><i class="fab fa-facebook"></i></span>
+                    <span class="icon_title">Connect with Facebook</span>
+
+                </a>
+
+                <a href="#" class="social_box google">
+                    <span class="icon"><i class="fab fa-google-plus"></i></span>
+                    <span class="icon_title">Connect with Google</span>
+                </a>
+            </div>
+
+            <div class="centeredText">
+                <span>Or use your Email address</span>
+            </div>
+
+            <div class="action_btns">
+                <div class="one_half"><a href="#" id="login_form" class="btn">Login</a></div>
+                <div class="one_half last"><a href="#" id="register_form" class="btn">Sign up</a></div>
+            </div>
+        </div>
+
+        <!-- Username & Password Login form -->
+        <div class="user_login">
+            <form>
+                <label>Email / Username</label>
+                <input type="text" />
+                <br />
+
+                <label>Password</label>
+                <input type="password" />
+                <br />
+
+                <div class="checkbox">
+                    <input id="remember" type="checkbox" />
+                    <label for="remember">Remember me on this computer</label>
+                </div>
+
+                <div class="action_btns">
+                    <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
+                    <div class="one_half last"><a href="#" class="btn btn_red">Login</a></div>
+                </div>
+            </form>
+
+            <a href="#" class="forgot_password">Forgot password?</a>
+        </div>
+
+        <!-- Register Form -->
+        <div class="user_register">
+            <form>
+                <label>Full Name</label>
+                <input type="text" />
+                <br />
+
+                <label>Email Address</label>
+                <input type="email" />
+                <br />
+
+                <label>Password</label>
+                <input type="password" />
+                <br />
+
+                <div class="checkbox">
+                    <input id="send_updates" type="checkbox" />
+                    <label for="send_updates">Send me occasional email updates</label>
+                </div>
+
+                <div class="action_btns">
+                    <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
+                    <div class="one_half last"><a href="#" class="btn btn_red">Register</a></div>
+                </div>
+            </form>
+        </div>
+    </section>
+</div>
+
+  <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="col-lg-6 align-self-center">
+              <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h2>Keep every subscription in one calm command center</h2>
+                    <p>Subscriptly tracks every recurring cost, spots what’s due next, and gives you clear reminders before charges hit. Add services in seconds, categorize spend, and see monthly or yearly totals at a glance. Smart notifications arrive on your schedule (with optional sound), and renewals can sync to Apple Calendar so nothing slips. Built for privacy: your data stays on your device—no accounts, no uploads.</p>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="white-button first-button scroll-to-section">
+                      <a href="#newsletter">Download on the App Store <i class="fab fa-apple"></i></a>
+                    </div>
+                    <div class="white-button scroll-to-section">
+                      <a href="#newsletter">Get updates <i class="fa fa-bell"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                <img src="assets/images/slider-dec.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="services" class="services section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+            <h4>Subscriptly <em>features</em> built for peace of mind</h4>
+            <img src="assets/images/heading-line-dec.png" alt="">
+            <p>Everything you need to stay on top of renewals without the noise—quick add, clear totals, smart reminders, and privacy by default.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="service-item first-service">
+            <div class="icon"></div>
+            <h4>Quick add &amp; organize</h4>
+            <p>Add subscriptions in seconds, tag by category, and keep monthly or yearly costs tidy.</p>
+            <div class="text-button">
+              <a href="#about">See how it works <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="service-item second-service">
+            <div class="icon"></div>
+            <h4>Next charge radar</h4>
+            <p>Spot what’s due next, review monthly and yearly totals, and avoid surprise renewals.</p>
+            <div class="text-button">
+              <a href="#clients">Hear from users <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="service-item third-service">
+            <div class="icon"></div>
+            <h4>Gentle reminders</h4>
+            <p>Smart notifications arrive on your schedule—quiet by default, sound when you want it.</p>
+            <div class="text-button">
+              <a href="#about">Set your cadence <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="service-item fourth-service">
+            <div class="icon"></div>
+            <h4>Calendar sync</h4>
+            <p>Send renewals to Apple Calendar so every bill shows up alongside the rest of your life.</p>
+            <div class="text-button">
+              <a href="#about">Privacy-first by design <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="about" class="about-us section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 align-self-center">
+          <div class="section-heading">
+            <h4>About <em>Subscriptly</em> &amp; how it keeps you in control</h4>
+            <img src="assets/images/heading-line-dec.png" alt="">
+            <p>Subscriptly was built as a calm command center for recurring costs—fast to set up, thoughtful with reminders, and private by default.</p>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="box-item">
+                <h4><a href="#">On-device privacy</a></h4>
+                <p>Your subscription list lives on your device; no accounts, no uploads.</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="box-item">
+                <h4><a href="#">Flexible reminders</a></h4>
+                <p>Set your own reminder timing with optional sound so renewals never sneak up.</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="box-item">
+                <h4><a href="#">Clear totals</a></h4>
+                <p>See monthly and yearly spend broken down by category at a glance.</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="box-item">
+                <h4><a href="#">Calendar ready</a></h4>
+                <p>Sync renewals to Apple Calendar so bills sit beside your real-life schedule.</p>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <p>Subscriptly is designed to be stress-free: quick to add services, simple to sort, and always respectful of your data.</p>
+              <div class="gradient-button">
+                <a href="#newsletter">Download Subscriptly</a>
+              </div>
+              <span>*Data stays on your device</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="right-image">
+            <img src="assets/images/about-right-dec.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="clients" class="the-clients">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="section-heading">
+            <h4>Hear what <em>real users</em> say about Subscriptly</h4>
+            <img src="assets/images/heading-line-dec.png" alt="">
+            <p>Fresh, informal notes from people who wanted a calmer way to handle renewals.</p>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="naccs">
+            <div class="grid">
+              <div class="row">
+                <div class="col-lg-7 align-self-center">
+                  <div class="menu">
+                    <div class="first-thumb active">
+                      <div class="thumb">
+                        <div class="row">
+                          <div class="col-lg-4 col-sm-4 col-12">
+                            <h4>Mia L.</h4>
+                            <span class="date">26 December 2025</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 d-none d-sm-block">
+                            <span class="category">Indie designer</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 col-12">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <span class="rating">4.9</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">
+                        <div class="row">
+                          <div class="col-lg-4 col-sm-4 col-12">
+                            <h4>Omar K.</h4>
+                            <span class="date">18 December 2025</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 d-none d-sm-block">
+                            <span class="category">Freelance video editor</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 col-12">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <span class="rating">4.8</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="last-thumb">
+                      <div class="thumb">
+                        <div class="row">
+                          <div class="col-lg-4 col-sm-4 col-12">
+                            <h4>Jess P.</h4>
+                            <span class="date">10 December 2025</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 d-none d-sm-block">
+                            <span class="category">Product manager</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 col-12">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <span class="rating">4.7</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+                <div class="col-lg-5">
+                  <ul class="nacc">
+                    <li class="active">
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="client-content">
+                                <img src="assets/images/quote.png" alt="">
+                                <p>“Subscriptly finally stopped the random $9 charges from sneaking up on me. I throw everything in once and the Apple Calendar sync keeps me sane.”</p>
+                              </div>
+                              <div class="down-content">
+                                <img src="assets/images/client-image.jpg" alt="">
+                                <div class="right-content">
+                                  <h4>Mia L.</h4>
+                                  <span>Indie designer</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="client-content">
+                                <img src="assets/images/quote.png" alt="">
+                                <p>“It’s chill but thorough—shows me what’s due this week, pings me quietly, and I love that everything stays on my phone.”</p>
+                              </div>
+                              <div class="down-content">
+                                <img src="assets/images/client-image.jpg" alt="">
+                                <div class="right-content">
+                                  <h4>Omar K.</h4>
+                                  <span>Freelance video editor</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="client-content">
+                                <img src="assets/images/quote.png" alt="">
+                                <p>“I didn’t realize how many yearly renewals I’d been forgetting. Now they live next to my calendar meetings and the math is automatic.”</p>
+                              </div>
+                              <div class="down-content">
+                                <img src="assets/images/client-image.jpg" alt="">
+                                <div class="right-content">
+                                  <h4>Jess P.</h4>
+                                  <span>Product manager</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>          
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+
+  <footer id="newsletter">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="footer-widget">
+            <h4>Contact Us</h4>
+            <p>Subscriptly is built for people who want calm control over subscriptions.</p>
+            <p><a href="mailto:support@subscriptly.app">support@subscriptly.app</a></p>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="footer-widget">
+            <h4>About Us</h4>
+            <ul>
+              <li><a href="#top">Home</a></li>
+              <li><a href="#services">Features</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#clients">Reviews</a></li>
+            </ul>
+            <ul>
+              <li><a href="privacy-policy.html">Privacy</a></li>
+              <li><a href="#newsletter">Download</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="footer-widget">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="#services">How reminders work</a></li>
+              <li><a href="#about">Privacy approach</a></li>
+              <li><a href="#clients">User stories</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="footer-widget">
+            <h4>About Our Company</h4>
+            <div class="logo">
+              <img src="assets/images/logo.png" alt="">
+            </div>
+            <p>Subscriptly is your calm command center for recurring costs. </p>
+            <p>Track every subscription, spot what’s due next, and get clear reminders before charges hit.</p>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="copyright-text">
+            <p>Copyright © 2025 Subscriptly. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/animation.js"></script>
+  <script src="assets/js/imagesloaded.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
+</body>
+</html>
